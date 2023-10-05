@@ -1,0 +1,159 @@
+[versions]
+minSdk = "26"
+compileSdk = "34"
+targetSdk = "34"
+
+kotlin = "1.9.10"
+kotlinxSerialization = "1.5.1"
+kotlinxDatetime = "0.4.0"
+androidGradlePlugin = "8.1.2"
+composeCompiler = "1.5.3"
+ksp = "1.9.20-Beta2-1.0.13"
+
+androidxCore = "1.12.0"
+androidxCoreSplashscreen = "1.0.1"
+androidxActivity = "1.8.0"
+androidxComposeBom = "2023.10.00"
+androidxLifecycle = "2.6.2"
+androidxNavigation = "1.0.0"
+accompanist = "0.30.1"
+
+ktorVersion = "2.3.4"
+androidxComposeNavigation = "2.7.4"
+coil = "2.4.0"
+hilt = "2.46.1"
+hiltExt = "1.0.0"
+logcat = "0.1"
+arrow = "1.2.1"
+secrets = "2.0.1"
+
+# TEST VERSIONS
+junit4 = "4.13.2"
+androidxTestCore = "1.5.0"
+androidxTestRules = "1.5.0"
+androidxTestRunner = "1.5.2"
+espresso = "3.5.1"
+mockk = "1.13.7"
+turbine = "1.0.0"
+org-jetbrains-kotlin-android = "1.8.0"
+junit = "1.1.5"
+appcompat = "1.6.1"
+material = "1.9.0"
+coroutinesTest = "1.7.3"
+kotestVersion = "5.7.2"
+kotestKtor = "4.4.3"
+kotestArrow = "1.4.0"
+datastore = "1.0.0"
+
+[libraries]
+kotlin-bom = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlin" }
+androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+
+# COMPOSE https://developer.android.com/jetpack/compose/bom
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+androidx-compose-ui-test = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-ui-testManifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxComposeNavigation" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidxNavigation" }
+
+# ACOMPANIST
+accompanist-system-ui-controller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist" }
+accompanist-placeholder = { group = "com.google.accompanist", name = "accompanist-placeholder-material3", version.ref = "accompanist" }
+accompanist-navigation-animation = { group = "com.google.accompanist", name = "accompanist-navigation-animation", version.ref = "accompanist" }
+
+# LIFECYCLE https://developer.android.com/jetpack/androidx/releases/lifecycle
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "androidxLifecycle" }
+androidx-datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+
+# HILT https://developer.android.com/jetpack/androidx/releases/hilt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExt" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+
+# ARROW https://github.com/arrow-kt/arrow/releases/tag/1.2.0-RC
+arrow-bom = { group = "io.arrow-kt", name = "arrow-stack", version.ref = "arrow" }
+arrow-core = { group = "io.arrow-kt", name = "arrow-core" }
+arrow-fx-coroutines = { group = "io.arrow-kt", name = "arrow-fx-coroutines" }
+
+# SERIALIZATION
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+# SPLASHSCREEN https://developer.android.com/develop/ui/views/launch/splash-screen/migrate
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCoreSplashscreen" }
+
+# NETWORKING https://ktor.io/docs/client-dependencies.html
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktorVersion" }
+ktor-client-auth = { group = "io.ktor", name = "ktor-client-auth", version.ref = "ktorVersion" }
+ktor-client-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktorVersion" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktorVersion" }
+ktor-serialization-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktorVersion" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktorVersion" }
+ktor-client-resource = { group = "io.ktor", name = "ktor-client-resources", version.ref = "ktorVersion" }
+ktor-client-mock = { group = "io.ktor", name = "ktor-client-mock", version.ref = "ktorVersion" }
+
+# LOGCAT https://github.com/square/logcat
+logcat = { module = "com.squareup.logcat:logcat", version.ref = "logcat" }
+
+# COIL https://coil-kt.github.io/coil/getting_started/
+coil-kt = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+coil-kt-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+coil-kt-svg = { group = "io.coil-kt", name = "coil-svg", version.ref = "coil" }
+coil-kt-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coil" }
+
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+
+# TESTING
+junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
+kotest = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotestVersion" }
+kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotestVersion" }
+kotest-assertions-ktor = { group = "io.kotest", name = "kotest-assertions-ktor", version.ref = "kotestKtor" }
+kotest-assertions-arrow = { group = "io.kotest.extensions", name = "kotest-assertions-arrow", version.ref = "kotestArrow" }
+kotest-property = { group = "io.kotest", name = "kotest-property", version.ref = "kotestVersion" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
+androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidxTestCore" }
+androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "androidxTestRules" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTestRunner" }
+androidx-test-navigation = { group = "androidx.navigation", name = "navigation-testing", version.ref = "androidxComposeNavigation" }
+espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+mockk = { group = "io.mockk", name = "mockk-android", version.ref = "mockk" }
+mockk-agent = { group = "io.mockk", name = "mockk-agent", version.ref = "mockk" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+[bundles]
+compose = ["androidx-compose-bom", "androidx-compose-foundation", "androidx-compose-foundation-layout", "androidx-compose-runtime", "androidx-compose-ui", "androidx-compose-ui-graphics", "androidx-compose-ui-tooling-preview", "androidx-compose-material3", "androidx-compose-material-icons-extended", "androidx-compose-ui-util", "androidx-compose-ui-test", "androidx-compose-navigation", "androidx-hilt-navigation-compose", "coil-kt", "coil-kt-compose", "coil-kt-svg", "coil-kt-gif", "accompanist-placeholder", "accompanist-system-ui-controller", "accompanist-navigation-animation"]
+ktor = ["ktor-client-core", "ktor-client-auth", "ktor-client-android", "ktor-client-content-negotiation", "ktor-serialization-json", "ktor-client-logging", "ktor-client-resource"]
+lifecycle = ["androidx-lifecycle-runtime-ktx", "androidx-lifecycle-viewmodel-ktx", "androidx-lifecycle-runtime-compose", "androidx-lifecycle-viewmodel-compose", "androidx-lifecycle-viewmodel-savedstate"]
+testing = ["junit4", "androidx-test-core", "androidx-test-rules", "androidx-test-runner", "androidx-test-navigation", "espresso", "mockk", "mockk-agent", "turbine", "hilt-android-testing", "kotlinx-coroutines-test", "kotest", "kotest-assertions", "kotest-property", "ktor-client-mock", "kotest-assertions-ktor", "kotest-assertions-arrow"]
+arrow = ["arrow-core", "arrow-fx-coroutines"]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
+com-android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
